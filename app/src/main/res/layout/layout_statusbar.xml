@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/launcher_statebar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusbar_height"
+        android:paddingLeft="@dimen/statusbar_paddingleft"
+        android:layout_weight="1"
+        android:background="@null"
+        >
+        <!--android:background="@android:color/darker_gray"-->
+
+        <LinearLayout
+            android:id="@+id/launcher_statusbar_power_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/statusbar_icongap"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:id="@+id/launcher_statusbar_powertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:textAlignment="center"
+                android:text="70%"
+                android:textSize="@dimen/statusbar_power_textsize"
+                android:textColor="@android:color/white" />
+            <!--PowerIconView-->
+            <com.artfire.ninedraw.vuforia_lib.widget.PowerIconView
+                android:id="@+id/launcher_statusbar_powericon"
+                android:layout_width="@dimen/statusbar_powericon_width"
+                android:layout_height="@dimen/statusbar_powericon_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/statusbar_icongap" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/launcher_statusbar_timertext"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/launcher_statusbar_power_layout"
+            android:layout_marginRight="@dimen/statusbar_icongap"
+            android:text="15:15"
+            android:textSize="@dimen/statusbar_time_textsize"
+            android:textColor="@android:color/white"
+            />
+
+        <ImageView
+            android:id="@+id/launcher_statusbar_wifiicon"
+            android:layout_width="@dimen/statusbar_wifiicon_width"
+            android:layout_height="@dimen/statusbar_wifiicon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/statusbar_icongap"
+            android:layout_toLeftOf="@id/launcher_statusbar_timertext"
+            android:src="@mipmap/icon_wlan"
+            android:visibility="gone"
+            />
+
+        <View
+            android:id="@+id/launcher_statusbar_blank_right"
+            android:layout_toLeftOf="@id/launcher_statusbar_wifiicon"
+            android:layout_centerVertical="true"
+            android:layout_width="1dp"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:id="@+id/launcher_statusbar_bluetoothicon"
+            android:layout_marginRight="@dimen/statusbar_icongap"
+            android:layout_width="@dimen/statusbar_bluetoothicon_width"
+            android:layout_height="@dimen/statusbar_bluetoothicon_height"
+            android:layout_toLeftOf="@id/launcher_statusbar_blank_right"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_bluetooth"
+            android:visibility="gone"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

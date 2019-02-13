@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="picture" size="0.500000 0.410681" />
+    <ImageTarget name="yang_seven" size="0.500000 0.859333" />
+    <ImageTarget name="yang_eight" size="0.500000 0.859333" />
+    <ImageTarget name="yang_six" size="0.500000 0.859333" />
+    <ImageTarget name="yang_fif" size="0.500000 0.859333" />
+    <ImageTarget name="yang_four" size="0.500000 0.859333" />
+    <ImageTarget name="yang_three" size="0.500000 0.859333" />
+    <ImageTarget name="yang_wo" size="0.500000 0.859438" />
+    <ImageTarget name="yang_one" size="0.500000 0.859333" />
+  </Tracking>
+</QCARConfig>

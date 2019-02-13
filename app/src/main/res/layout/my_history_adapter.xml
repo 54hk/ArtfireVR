@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_89">
+
+        <ImageView
+            android:id="@+id/iv_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/my_suggestion" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_c252525_c939393_c000"
+            android:padding="@dimen/margin_4"
+            android:text="已学90%"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_11" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_7"
+        android:layout_marginTop="@dimen/margin_7"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="课程名称"
+        android:textColor="@color/text_444"
+        android:textSize="@dimen/text_13" />
+</LinearLayout>

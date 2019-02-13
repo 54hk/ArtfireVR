@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_14"
+            android:paddingRight="@dimen/margin_14">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="@string/string_feedback_content"
+                android:textColor="@color/text_444"/>
+
+            <EditText
+                android:id="@+id/input_edittext_on_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/item_record_background5dp"
+                android:gravity="top"
+                android:maxLength="300"
+                android:minHeight="@dimen/margin_240"
+                android:textColor="@color/text_444"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_18"
+                android:text="@string/string_feedback_explan"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/text_12" />
+
+            <EditText
+                android:id="@+id/email_edittext_on_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/item_record_background5dp"
+                android:hint="@string/string_opinion_email"
+                android:minHeight="@dimen/margin_36"
+                android:paddingLeft="@dimen/margin_8"
+                android:paddingRight="@dimen/margin_8"
+                android:textColor="@color/text_444"
+                android:textColorHint="@color/color_bbb"
+                android:textSize="@dimen/text_12" />
+
+            <TextView
+                android:id="@+id/submit_on_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_38"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/solide_ccab86_5dp"
+                android:gravity="center"
+                android:text="@string/string_submit"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

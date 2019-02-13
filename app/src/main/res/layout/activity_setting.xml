@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_14"
+            android:layout_marginRight="@dimen/margin_14">
+
+            <TextView
+                style="@style/text_15_555"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/string_only_wifi_look" />
+
+            <TextView
+                style="@style/text_13_666_b17_t17_r16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:visibility="invisible" />
+
+            <com.artfire.ninedraw.artfire_code.utils.SwitchView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/margin_14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_14"
+            android:layout_marginRight="@dimen/margin_14">
+
+            <TextView
+                style="@style/text_15_555"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/string_change_password" />
+
+            <TextView
+                style="@style/text_13_666_b17_t17_r16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/forward_icon" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/margin_14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_14"
+            android:layout_marginRight="@dimen/margin_14">
+
+            <TextView
+                style="@style/text_15_555"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/string_about_us" />
+
+            <TextView
+                style="@style/text_13_666_b17_t17_r16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V 1.0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/forward_icon" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_38"
+        android:layout_marginTop="@dimen/magin_58"
+        android:gravity="center"
+        android:text="@string/string_login_out"
+        android:textColor="@color/text_444"
+        android:textSize="@dimen/text_15" />
+
+</LinearLayout>
